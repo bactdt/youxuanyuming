@@ -6,7 +6,8 @@ import os
 # 目标URL列表
 urls = [
         'https://cf.090227.xyz',
-        'https://ip.164746.xyz/ipTop10.html'
+        'https://ip.164746.xyz/ipTop10.html',
+        'https://bihai.cf/CFIP'
         ]
 
 # 正则表达式用于匹配IP地址
@@ -29,6 +30,8 @@ with open('ip.txt', 'w') as file:
         if url == 'https://cf.090227.xyz':
             elements = soup.find_all('tr')
         elif url == 'https://ip.164746.xyz/ipTop10.html':
+            elements = soup.find_all('tr')
+        elif url == 'https://bihai.cf/CFIP':
             elements = soup.find_all('tr')
         else:
             elements = soup.find_all('li')
