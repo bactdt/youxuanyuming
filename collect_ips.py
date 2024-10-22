@@ -5,7 +5,7 @@ import os
 
 # 目标URL列表
 urls = ['https://ip.164746.xyz/ipTop10.html', 
-        ‘https://bihai.cf/CFIP/CMCC/standard.txt’,
+        'https://bihai.cf/CFIP/CMCC/standard.txt',
         ]
 
 # 正则表达式用于匹配IP地址
