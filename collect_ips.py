@@ -26,11 +26,11 @@ with open('ip.txt', 'w') as file:
         
         # 根据网站的不同结构找到包含IP地址的元素
         if url == 'https://ip.164746.xyz/ipTop10.html':
-            elements = soup.find_all('tr')
+                elements = soup.find_all('tr')
         elif url == 'https://bihai.cf/CFIP/CMCC/standard.txt':
-            elements = soup.find_all('tr')
+                elements = soup.find_all('tr')
         else:
-            elements = soup.find_all('li')
+                elements = soup.find_all('li')
         
         # 遍历所有元素,查找IP地址
         for element in elements:
