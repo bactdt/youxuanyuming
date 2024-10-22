@@ -5,8 +5,7 @@ import os
 
 # 目标URL列表
 urls = ['https://ip.164746.xyz/ipTop10.html', 
-        ‘https://cm.yutian.us.kg’,
-        ‘https://test32.speed.xn--1jq721i.cn’
+        ‘https://bihai.cf/CFIP/CMCC/standard.txt’,
         ]
 
 # 正则表达式用于匹配IP地址
@@ -28,9 +27,7 @@ with open('ip.txt', 'w') as file:
         # 根据网站的不同结构找到包含IP地址的元素
         if url == 'https://ip.164746.xyz/ipTop10.html':
             elements = soup.find_all('tr')
-        elif url == 'https://cm.yutian.us.kg':
-            elements = soup.find_all('tr')
-        elif url == 'https://test32.speed.xn--1jq721i.cn':
+        elif url == 'https://bihai.cf/CFIP/CMCC/standard.txt':
             elements = soup.find_all('tr')
         else:
             elements = soup.find_all('li')
